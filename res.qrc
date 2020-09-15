@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>res/game1.jpg</file>
+        <file>res/game2.jpg</file>
+        <file>res/game3.jpg</file>
+        <file>res/startgame.jpg</file>
+        <file>res/startbtn/btn_start_off.png</file>
+        <file>res/startbtn/btn_start_over.png</file>
+        <file>res/startbtn/btn_end_off.png</file>
+        <file>res/startbtn/btn_end_over.png</file>
+        <file>res/startbtn/btn_load_off.png</file>
+        <file>res/startbtn/btn_load_over.png</file>
+        <file>res/startbtn/banzi.png</file>
+        <file>res/back_01.png</file>
+        <file>res/startbtn/btn_b_over.png</file>
+        <file>res/startbtn/btn_b_over_2.png</file>
+        <file>res/mes_window.png</file>
+        <file>res/mes_window_m.png</file>
+        <file>res/startbtn/btn_orange.png</file>
+        <file>res/pigspybutton.jpg</file>
+        <file>res/pigspybutton.png</file>
+        <file>res/btn_orange_1.png</file>
+        <file>res/store_bgimg.png</file>
+        <file>res/broove.png</file>
+        <file>res/gold.png</file>
+        <file>res/lose.png</file>
+        <file>res/sliver.png</file>
+        <file>res/1.mp3</file>
+        <file>res/2.mp3</file>
+        <file>res/3.mp3</file>
+        <file>res/1.wav</file>
+        <file>res/2.wav</file>
+        <file>res/3.wav</file>
+    </qresource>
+</RCC>

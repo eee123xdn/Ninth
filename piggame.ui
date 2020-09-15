@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PigGame</class>
+ <widget class="QMainWindow" name="PigGame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="backimg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1200</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/game3.jpg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_honor">
+    <property name="geometry">
+     <rect>
+      <x>525</x>
+      <y>0</y>
+      <width>150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/banzi.png);
+font:25pt &quot;方正少儿简体&quot;;
+color: rgb(253, 253, 253);</string>
+    </property>
+    <property name="text">
+     <string>成就</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_config">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>0</y>
+      <width>150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/banzi.png);
+font:25pt &quot;方正少儿简体&quot;;
+color: rgb(253, 253, 253);</string>
+    </property>
+    <property name="text">
+     <string>设置</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_store">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>150</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/banzi.png);
+font:25pt &quot;方正少儿简体&quot;;
+color: rgb(253, 253, 253);</string>
+    </property>
+    <property name="text">
+     <string>商店</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>800</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/back_01.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_nextpage">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>220</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_b_over.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_frontpage">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_b_over_2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>490</y>
+      <width>1100</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/mes_window.png);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_tips">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>700</y>
+      <width>1100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/mes_window_m.png);
+font: 11pt &quot;方正粗圆简体&quot;;
+color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>630</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_arise">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>510</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>养猪场出现/未出现瘟疫</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_geli">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>510</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>开始隔离</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_pigsty">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>560</y>
+      <width>381</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>有瘟疫的猪圈有xx个，占到了所有猪圈的xx%</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_health_day">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>630</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>目前处于非隔离状态</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_daed_day">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>600</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>如果未隔离，最快xx天后全部猪就会死亡</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_saveauto">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>660</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 5, 25);
+font: 9pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>游戏自动保存中···</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>721</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="page1" name="page"/>
+    <widget class="page2" name="page_2"/>
+    <widget class="page3" name="page_3"/>
+    <widget class="page4" name="page_4"/>
+    <widget class="page5" name="page_5"/>
+   </widget>
+   <widget class="QPushButton" name="btn_viewmoneyall">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>720</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看五年财报</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>660</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_buy_recoder">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>760</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看购入记录</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_arise_2">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>510</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 15pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看统计数据</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_tj_number">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>630</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_tj_days">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>630</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_tj_weight">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>630</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>查看</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_arise_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>580</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>各品种数量统计</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_arise_4">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>580</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>各品种饲养天数统计</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_ill_arise_5">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>580</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正粗圆简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>各品种体重统计</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_tj_days_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>80</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/res/startbtn/btn_orange.png);
+color: rgb(255, 255, 255);
+font: 10pt &quot;方正少儿简体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>返回游戏</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>backimg</zorder>
+   <zorder>btn_config</zorder>
+   <zorder>btn_store</zorder>
+   <zorder>label_2</zorder>
+   <zorder>btn_nextpage</zorder>
+   <zorder>btn_frontpage</zorder>
+   <zorder>label_3</zorder>
+   <zorder>lb_tips</zorder>
+   <zorder>label_4</zorder>
+   <zorder>btn_geli</zorder>
+   <zorder>lb_saveauto</zorder>
+   <zorder>lb_ill_arise</zorder>
+   <zorder>lb_ill_pigsty</zorder>
+   <zorder>lb_daed_day</zorder>
+   <zorder>lb_health_day</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>btn_honor</zorder>
+   <zorder>btn_viewmoneyall</zorder>
+   <zorder>label</zorder>
+   <zorder>btn_buy_recoder</zorder>
+   <zorder>lb_ill_arise_2</zorder>
+   <zorder>btn_tj_number</zorder>
+   <zorder>btn_tj_days</zorder>
+   <zorder>btn_tj_weight</zorder>
+   <zorder>lb_ill_arise_3</zorder>
+   <zorder>lb_ill_arise_4</zorder>
+   <zorder>lb_ill_arise_5</zorder>
+   <zorder>btn_tj_days_2</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>page1</class>
+   <extends>QWidget</extends>
+   <header>page1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>page2</class>
+   <extends>QWidget</extends>
+   <header>page2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>page3</class>
+   <extends>QWidget</extends>
+   <header>page3.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>page4</class>
+   <extends>QWidget</extends>
+   <header>page4.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>page5</class>
+   <extends>QWidget</extends>
+   <header>page5.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
